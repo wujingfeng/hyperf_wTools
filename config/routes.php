@@ -23,6 +23,7 @@ Router::addGroup('/wTools', function (){
         Router::get("/forceTalk", [\App\Controller\QQController::class,'forceDialog']);
         // qq 免 key 加群
         Router::get("/qun", [\App\Controller\QQController::class,'qun']);
+        // 获取qq群头像
         Router::get("/getQQQunImg", [\App\Controller\QQController::class,'getQQQunImg']);
     });
 },
