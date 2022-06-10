@@ -83,6 +83,6 @@ class UserAgent
 
         ];
 
-        return $userAgents[random_int(0, count($userAgents))];
+        return $userAgents[random_int(0, count($userAgents) - 1)];
     }
 }
